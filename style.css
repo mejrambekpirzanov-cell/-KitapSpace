@@ -380,3 +380,26 @@ footer{
         height: auto;
     }
 }
+
+/* Дополнительная настройка для маленьких экранов */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    header,
+    main,
+    footer {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
