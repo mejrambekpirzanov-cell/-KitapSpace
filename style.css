@@ -1,0 +1,353 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#eee;color:#333}
+a{text-decoration:none}
+
+header{
+    background:#fff;
+    padding:7px 25px;
+    border-bottom:1px solid #ccc
+}
+.header_sh{
+    max-width:1250px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between
+}
+.logo img{
+    width:280px;
+    height:160px;
+    object-fit:contain
+}
+nav a{
+    color:#604a2f;
+    margin-left:18px;
+    font-size:14px
+}
+.user{
+    margin-left:15px;
+    color:#604a2f;
+    font-weight:bold
+}
+.logout{
+    background:#8b5d28;
+    color:#fff;
+    border:0;
+    padding:6px 10px;
+    border-radius:5px;
+    cursor:pointer;
+    margin-left:8px
+}
+
+.page{
+    max-width:1250px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 220px;
+    gap:15px;
+    padding:10px
+}
+.site-title_KtSp{
+    background:#fff;
+    border:1px solid #ccc;
+    border-radius:7px;
+    padding:8px;
+    text-align:center;
+    margin-bottom:12px
+}
+.site-title_KtSp h1{
+    font:26px Georgia;
+    color:#8b5d28;
+    margin:3px
+}
+.site-title_KtSp p{
+    color:#777;
+    margin:3px;
+    font-size:13px
+}
+
+.book{
+    background:#ffffd6;
+    border:1px solid #d2a63b;
+    border-radius:8px;
+    overflow:hidden;
+    margin-bottom:15px;
+    box-shadow:0 2px 6px #bbb
+}
+.book-top{
+    background:#d0d72c;
+    padding:7px 10px;
+    font-size:12px
+}
+.rating{float:right;color:#fff}
+.book-content{
+    display:flex;
+    gap:15px;
+    padding:10px
+}
+.book img{
+    width:150px;
+    height:220px;
+    object-fit:cover;
+    border-radius:6px
+}
+.book-info{
+    flex:1;
+    font-size:13px
+}
+.book-info h2{
+    margin:0 0 5px;
+    font-size:19px
+}
+.author{
+    color:#28529b;
+    font-weight:bold
+}
+.info{
+    line-height:1.5;
+    margin:8px 0
+}
+.desc{line-height:1.5}
+.book-btns{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-top:12px
+}
+.read,.mark{
+    border:0;
+    color:#fff;
+    padding:7px 12px;
+    border-radius:5px;
+    font-weight:bold;
+    cursor:pointer
+}
+.read{background:#5d78a0}
+.mark{background:#8b7d45}
+.mark.active{background:#4e8b57}
+
+/* Аудиокітап батырмасы */
+.audio-toggle{
+    margin-top:10px;
+    padding:8px 12px;
+    background:#604a2f;
+    color:#fff;
+    border:0;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold
+}
+.audio-toggle:hover{background:#8b5d28}
+
+.audio{
+    margin-top:12px;
+    padding:10px;
+    background:#eee;
+    border-radius:6px
+}
+.audio b{
+    display:block;
+    margin-bottom:7px;
+    color:#604a2f
+}
+.audio audio{width:100%}
+
+.book-bottom{
+    background:#eee;
+    padding:7px 10px;
+    font-size:11px;
+    color:#666;
+    display:flex;
+    justify-content:space-between
+}
+
+.side{
+    background:#e8dfc6;
+    padding:8px;
+    border-left:1px solid #b9a96e
+}
+.side-box{
+    background:#fff;
+    border:1px solid #bba643;
+    border-radius:6px;
+    overflow:hidden;
+    margin-bottom:10px
+}
+.side-title{
+    background:#d5b522;
+    padding:7px;
+    text-align:center;
+    font-size:12px;
+    font-weight:bold
+}
+.side-content{
+    padding:9px;
+    font-size:13px
+}
+.side input{
+    width:100%;
+    padding:8px;
+    border:1px solid #c8aa43;
+    border-radius:4px;
+    margin-bottom:6px
+}
+.side button{
+    width:100%;
+    padding:7px;
+    background:#5d78a0;
+    color:#fff;
+    border:0;
+    border-radius:4px;
+    cursor:pointer
+}
+.side a{
+    display:block;
+    color:#28529b;
+    margin:7px 0
+}
+.genre{margin:6px 0}
+
+.about,.bookmarks{
+    background:#fff;
+    padding:25px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px
+}
+.about h2,.bookmarks h2{
+    text-align:center;
+    color:#76542b
+}
+.about p{
+    max-width:850px;
+    margin:auto;
+    text-align:center;
+    line-height:1.6;
+    color:#555
+}
+
+.bookmark-item{
+    background:#f3f0e5;
+    padding:12px;
+    margin:8px 0;
+    border-radius:6px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px
+}
+.bookmark-item select{
+    padding:6px;
+    border:1px solid #bbb;
+    border-radius:5px
+}
+
+.progress{
+    display:flex;
+    align-items:center;
+    gap:5px
+}
+.progress input{
+    width:70px;
+    padding:6px;
+    border:1px solid #bbb;
+    border-radius:5px
+}
+.progress button{
+    padding:6px 9px;
+    background:#5d78a0;
+    color:#fff;
+    border:0;
+    border-radius:5px;
+    cursor:pointer
+}
+
+.review{
+    width:100%;
+    margin-top:12px;
+    padding:12px;
+    background:#fff8dc;
+    border:1px solid #d2a63b;
+    border-radius:6px
+}
+.review label{
+    display:block;
+    margin:7px 0 4px;
+    font-weight:bold;
+    color:#604a2f
+}
+.review select,.review textarea{
+    width:100%;
+    padding:8px;
+    border:1px solid #c8aa43;
+    border-radius:5px;
+    font:14px Arial,sans-serif
+}
+.review textarea{min-height:65px;resize:vertical}
+.review button{
+    margin-top:8px;
+    padding:8px 12px;
+    background:#8b5d28;
+    color:#fff;
+    border:0;
+    border-radius:5px;
+    cursor:pointer
+}
+.review-note{font-size:12px;color:#4e8b57;margin-top:6px}
+
+.page-info{
+    font-size:12px;
+    color:#666;
+    margin-top:5px
+}
+
+footer{
+    background:#333;
+    color:#fff;
+    text-align:center;
+    padding:18px;
+    font-size:13px
+}
+
+#auth{
+    position:fixed;
+    inset:0;
+    background:linear-gradient(135deg,#4b42c5,#8176e8);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:100
+}
+.auth{
+    width:90%;
+    max-width:380px;
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 30px #333
+}
+.auth h2{color:#4b42c5}
+.auth input{
+    width:100%;
+    padding:11px;
+    margin:5px 0;
+    border:1px solid #ccc;
+    border-radius:7px
+}
+.auth button{
+    width:100%;
+    padding:11px;
+    margin-top:7px;
+    background:#4b42c5;
+    color:#fff;
+    border:0;
+    border-radius:7px;
+    cursor:pointer
+}
+.link{
+    color:#4b42c5;
+    font-weight:bold;
+    cursor:pointer
+}
+#message{color:#d33;font-size:13px}

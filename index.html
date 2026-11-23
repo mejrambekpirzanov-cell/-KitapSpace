@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>KitapSpace — Онлайн кітапхана</title>
+
+<link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+
+<div id="auth">
+<div class="auth">
+
+<h2 id="authTitle">📚 Тіркелу</h2>
+
+<div id="registerForm">
+<input id="regName" placeholder="Атыңыз">
+<input id="regEmail" type="email" placeholder="Электрондық пошта">
+<input id="regPass" type="password" placeholder="Құпиясөз">
+<button onclick="register()">Тіркелу</button>
+
+<p>
+Аккаунтыңыз бар ма?
+<span class="link" onclick="showLogin()">Кіру</span>
+</p>
+</div>
+
+<div id="loginForm" style="display:none">
+<input id="loginEmail" type="email" placeholder="Электрондық пошта">
+<input id="loginPass" type="password" placeholder="Құпиясөз">
+<button onclick="login()">Кіру</button>
+
+<p>
+Аккаунтыңыз жоқ па?
+<span class="link" onclick="showRegister()">Тіркелу</span>
+</p>
+</div>
+
+<p id="message"></p>
+
+</div>
+</div>
+
+<div id="site" style="display:none">
+
+<header>
+<div class="header_sh">
+
+<div class="logo">
+<img src="Gemini_Generated_Image_g1dcng1dcng1dcng.jpg" alt="KitapSpace">
+</div>
+
+<nav>
+<a href="#home">Басты бет</a>
+<a href="#books">Кітаптар</a>
+<a href="#saved">Бетбелгілер</a>
+<a href="#about">Біз туралы</a>
+<span class="user" id="userName"></span>
+<button class="logout" onclick="logout()">Шығу</button>
+</nav>
+
+</div>
+</header>
+
+<div class="page">
+
+<main>
+
+<div class="site-title_KtSp" id="home">
+<h1>Онлайн кітапхана KitapSpace</h1>
+<p>Кітаптарды іздеу, оқу және жаңа шығармаларды табу</p>
+</div>
+
+<section id="books"></section>
+
+<section class="bookmarks" id="saved">
+<h2>🔖 Менің бетбелгілерім</h2>
+<div id="savedList">Әзірге бетбелгіге кітап қосылған жоқ.</div>
+</section>
+
+<section class="about" id="about">
+<h2>📚 KitapSpace туралы</h2>
+<p>
+KitapSpace — кітаптарды іздеуге, авторлармен және шығармалармен танысуға арналған онлайн кітапхана.
+Сайт оқушыларға, студенттерге, мұғалімдерге және кітап оқуға қызығатын адамдарға арналған.
+</p>
+</section>
+
+</main>
+
+<aside class="side">
+
+<div class="side-box">
+<div class="side-title">КІТАП ІЗДЕУ</div>
+<div class="side-content">
+<input id="search" placeholder="Кітап немесе автор...">
+<button onclick="searchBooks()">Іздеу</button>
+</div>
+</div>
+
+<div class="side-box">
+<div class="side-title">БӨЛІМДЕР</div>
+<div class="side-content">
+<a href="#books">📖 Кітаптар</a>
+<a href="#saved">🔖 Бетбелгілер</a>
+<a href="#about">📚 Біз туралы</a>
+</div>
+</div>
+
+<div class="side-box">
+<div class="side-title">ЖАНРЛАР</div>
+<div class="side-content">
+<div class="genre">📘 Роман</div>
+<div class="genre">📕 Фэнтези</div>
+<div class="genre">📗 Антиутопия</div>
+<div class="genre">📙 Өзін-өзі дамыту</div>
+</div>
+</div>
+
+<div class="side-box">
+<div class="side-title">КІТАПХАНА</div>
+<div class="side-content">
+<b>Кітап саны:</b> 5<br><br>
+<b>Қолжетімділік:</b> 24/7
+</div>
+</div>
+
+</aside>
+</div>
+
+<footer>
+© 2026 KitapSpace — Онлайн кітапхана
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
